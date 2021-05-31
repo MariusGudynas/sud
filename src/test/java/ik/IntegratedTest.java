@@ -14,7 +14,7 @@ import java.util.*;
  */
  public class IntegratedTest
  {
-	int[] numbersToFil1l = {6,3,5,4,9,2,0,1,7};
+	int[] numbersToFill1 = {6,3,5,4,9,2,0,1,7};
 	int[] numbersToFill2 = {6,3,5,4,9,0,0,0,7};
 			
 	private FilledNumbers numbers;
@@ -23,7 +23,7 @@ import java.util.*;
 	public void fillingAndCheckingForSingleTest(){
 		numbers  = new FilledNumbers();
 		
-		numbers.fillNumbersByArray(numbersToFil1);
+		numbers.fillNumbersByArray(numbersToFill1);
 		
 		assertEquals ( "Number should be 8", 8,  numbers.checkForSingleNumber());
 	}

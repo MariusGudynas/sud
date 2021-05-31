@@ -26,9 +26,7 @@ public class App
 		System.out.println("Pasirinkti faila 0-" + (maxFileNumber-1));
 		for(int i =0; i< maxFileNumber; i++){
 			System.out.println("[" + i + "] " + filesList[i]);
-		}
-		
-		
+		}		
 		
 		String str;
 		String file_name = "0";
@@ -48,6 +46,8 @@ public class App
 		}
 		
 		Board board = new Board(file_name);
+		
+		board.writeBoardToConsole();
 		
 		while(solve_method == "0"){
 			System.out.println("Select solving method:");
