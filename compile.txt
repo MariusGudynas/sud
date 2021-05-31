@@ -1,0 +1,3 @@
+mvn compile
+mvn clean package
+java -cp target/sud-1.0-SNAPSHOT.jar sudoku.App
